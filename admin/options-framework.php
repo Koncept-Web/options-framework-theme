@@ -243,8 +243,8 @@ function optionsframework_page() {
 			<div class="clear"></div>
 			</div> <!--/main-->
 			<div id="of_admin_bar">
-				<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options' ); ?>" />
-				<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!' ) ); ?>' );" />
+				<input type="submit" class="button-primary" name="update" value="<?php esc_attr_e( 'Save Options','skeleton' ); ?>" />
+				<input type="submit" class="reset-button button-secondary" name="reset" value="<?php esc_attr_e( 'Restore Defaults','skeleton' ); ?>" onclick="return confirm( '<?php print esc_js( __( 'Click OK to reset. Any theme settings will be lost!','skeleton' ) ); ?>' );" />
 			</div><!--/of_admin_bar-->
 			<div class="clear"></div>
 		</form>
@@ -275,7 +275,7 @@ function optionsframework_validate( $input ) {
 	 */
 	 
 	if ( isset( $_POST['reset'] ) ) {
-		add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.', 'optionsframework' ), 'updated fade' );
+		add_settings_error( 'options-framework', 'restore_defaults', __( 'Default options restored.','skeleton' ), 'updated fade' );
 		return of_get_default_values();
 	}
 
@@ -316,7 +316,7 @@ function optionsframework_validate( $input ) {
 			}
 		}
 
-		add_settings_error( 'options-framework', 'save_options', __( 'Options saved.', 'optionsframework' ), 'updated fade' );
+		add_settings_error( 'options-framework', 'save_options', __( 'Options saved.','skeleton' ), 'updated fade' );
 		return $clean;
 	}
 
