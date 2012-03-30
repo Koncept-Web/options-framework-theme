@@ -199,10 +199,10 @@ add_filter( 'of_font_face', 'of_sanitize_font_face' );
  */
 function of_recognized_background_repeat() {
 	$default = array(
-		'no-repeat' =>  __( 'No Repeat','skeleton' ),
-		'repeat-x'  =>  __( 'Repeat Horizontally','skeleton' ),
-		'repeat-y'  =>  __( 'Repeat Vertically','skeleton' ),
-		'repeat'    =>  __( 'Repeat All','skeleton' )
+		'no-repeat' =>  __( 'No Repeat','optionsframework' ),
+		'repeat-x'  =>  __( 'Repeat Horizontally','optionsframework' ),
+		'repeat-y'  =>  __( 'Repeat Vertically','optionsframework' ),
+		'repeat'    =>  __( 'Repeat All','optionsframework' )
 		);
 	return apply_filters( 'of_recognized_background_repeat', $default );
 }
@@ -215,15 +215,15 @@ function of_recognized_background_repeat() {
  */
 function of_recognized_background_position() {
 	$default = array(
-		'top left'      => __('Top Left','skeleton'),
-		'top center'    => __('Top Center','skeleton'),
-		'top right'     => __('Top Right','skeleton'),
-		'center left'   => __('Middle Left','skeleton'),
-		'center center' => __('Middle Center','skeleton'),
-		'center right'  => __('Middle Right','skeleton'),
-		'bottom left'   => __('Bottom Left','skeleton'),
-		'bottom center' => __('Bottom Center','skeleton'),
-		'bottom right'  => __('Bottom Right','skeleton')
+		'top left'      => __('Top Left','optionsframework'),
+		'top center'    => __('Top Center','optionsframework'),
+		'top right'     => __('Top Right','optionsframework'),
+		'center left'   => __('Middle Left','optionsframework'),
+		'center center' => __('Middle Center','optionsframework'),
+		'center right'  => __('Middle Right','optionsframework'),
+		'bottom left'   => __('Bottom Left','optionsframework'),
+		'bottom center' => __('Bottom Center','optionsframework'),
+		'bottom right'  => __('Bottom Right','optionsframework')
 		);
 	return apply_filters( 'of_recognized_background_position', $default );
 }
@@ -236,8 +236,8 @@ function of_recognized_background_position() {
  */
 function of_recognized_background_attachment() {
 	$default = array(
-		'scroll' => __('Scroll Normally','skeleton'),
-		'fixed'  => __('Fixed in Place','skeleton')
+		'scroll' => __('Scroll Normally','optionsframework'),
+		'fixed'  => __('Fixed in Place','optionsframework')
 		);
 	return apply_filters( 'of_recognized_background_attachment', $default );
 }
@@ -311,10 +311,10 @@ function of_recognized_font_faces() {
  */
 function of_recognized_font_styles() {
 	$default = array(
-		'normal'      => __('Normal','skeleton'),
-		'italic'      => __('Italic','skeleton'),
-		'bold'        => __('Bold','skeleton'),
-		'bold italic' => __('Bold Italic','skeleton')
+		'normal'      => __('Normal','optionsframework'),
+		'italic'      => __('Italic','optionsframework'),
+		'bold'        => __('Bold','optionsframework'),
+		'bold italic' => __('Bold Italic','optionsframework')
 		);
 	return apply_filters( 'of_recognized_font_styles', $default );
 }
